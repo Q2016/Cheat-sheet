@@ -28,7 +28,7 @@ def invertTree2(self, root):
     
     while queue:
         node = queue.popleft()
-        if node:
+        if node: --------------------------------------------> # for neighbor, value in graph[front]:
             node.left, node.right = node.right, node.left
             queue.append(node.left)
             queue.append(node.right)
