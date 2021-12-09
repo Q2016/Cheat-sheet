@@ -23,6 +23,9 @@ Breadth-First or Level Order Traversal: 1 2 3 4 5
 # BFS
 def invertTree2(self, root):
     queue = collections.deque([(root)])
+    
+    visited=set() # for optimization
+    
     while queue:
         node = queue.popleft()
         if node:
