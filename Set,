@@ -1,8 +1,0 @@
-// first element of a set
-list.pop()
-
-
-# reverse loop
-for i in range(l,n,-1):
-starts from l stops at n (not included): l, l-1,..,n+1
-
