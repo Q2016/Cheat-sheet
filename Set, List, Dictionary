@@ -3,7 +3,10 @@ Set
 
 // first element of a set
 list.pop()
-
+//pop
+# remove the element at index 2
+removed_element = prime_numbers.pop(2)
+.pop()// with no index drops the last item
 
 # reverse loop
 for i in range(l,n,-1):
@@ -32,6 +35,11 @@ for i in res:
     for p in people:
         queue.insert(p[1], p)     
 
+
+
+// list of list to list
+t is list of list
+flat_list = [item for sublist in t for item in sublist]
 
 ##############################################################################
 Dictionary
