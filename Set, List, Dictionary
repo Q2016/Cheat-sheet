@@ -1,6 +1,10 @@
 ############################################################################
 Set
 
+visited = set()
+visited.add(front)
+
+
 // first element of a set
 list.pop()
 //pop
