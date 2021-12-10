@@ -5,7 +5,7 @@ dic=cnt.most_common(k)
         
 import collections
 	cnt = Counter(arr)
-        frequencies = list(cnt.values())
+        frequencies = list(cnt.values()) -------------------------> returns frequency
         frequencies.sort()
 
 // using heap with dictionary
@@ -13,7 +13,7 @@ import collections
         # 2-3. build heap of top k frequent elements and
         # convert it into an output array
         # O(N log k) time
-        return heapq.nlargest(k, count.keys(), key=count.get)
+        return heapq.nlargest(k, count.keys(), key=count.get)-----------------------> returns keys in array format
 // accessing Counter
 	for k,v in cnt.items():
 // or 
