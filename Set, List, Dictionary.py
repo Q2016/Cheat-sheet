@@ -25,8 +25,19 @@ list1_as_set = set(list1)
 intersection = list1_as_set.intersection(list2)
 intersection_as_list = list(intersection)
 
+// reverse list list[::-1]
+
 // remove item from list
 prime_numbers = [2, 3, 5, 7, 9, 11]
+
+
+// 1d list, 2d list (Array Allocation)
+d=[0]*10
+d[1]=d[0]+1
+//2d
+t = [ [0]*N1 for i in range(N2)]
+
+
 
 # remove 9 from the list
 prime_numbers.remove(9)
@@ -44,6 +55,38 @@ for i in res:
 // list of list to list
 t is list of list
 flat_list = [item for sublist in t for item in sublist]
+
+// python slicing intro
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+Similarly, step may be a negative number:
+
+a[::-1]    # all items in the array, reversed
+a[1::-1]   # the first two items, reversed
+a[:-3:-1]  # the last two items, reversed
+a[-3::-1]  # everything except the last two items, reversed
+>>> seq[:]                # [seq[0],   seq[1],          ..., seq[-1]    ]
+>>> seq[low:]             # [seq[low], seq[low+1],      ..., seq[-1]    ]
+>>> seq[:high]            # [seq[0],   seq[1],          ..., seq[high-1]]
+>>> seq[low:high]         # [seq[low], seq[low+1],      ..., seq[high-1]]
+>>> seq[::stride]         # [seq[0],   seq[stride],     ..., seq[-1]    ]
+>>> seq[low::stride]      # [seq[low], seq[low+stride], ..., seq[-1]    ]
+>>> seq[:high:stride]     # [seq[0],   seq[stride],     ..., seq[high-1]]
+>>> seq[low:high:stride]  # [seq[low], seq[low+stride], ..., seq[high-1]]
+Of course, if (high-low)%stride != 0, then the end point will be a little lower than high-1.
+
+If stride is negative, the ordering is changed a bit since we're counting down:
+
+>>> seq[::-stride]        # [seq[-1],   seq[-1-stride],   ..., seq[0]    ]
+>>> seq[high::-stride]    # [seq[high], seq[high-stride], ..., seq[0]    ]
+>>> seq[:low:-stride]     # [seq[-1],   seq[-1-stride],   ..., seq[low+1]]
+>>> seq[high:low:-stride] # [seq[high], seq[high-stride], ..., seq[low+1]]
+
+#############################################################################
+// stack in python is just a list, you can use .pop() to drop last element
+stack=[]
+
 
 ##############################################################################
 Dictionary
