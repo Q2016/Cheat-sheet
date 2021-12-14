@@ -1,6 +1,12 @@
 //regex sub
 import re
 
+// string.split("@")
+//string.replace("+","")
+// string "".join(list) ex: ' '.join(['this', 'is', 'a', 'sentence'])
+
+
+
 #Squaring numbers
 def square(match):
     number = int(match.group(0))
