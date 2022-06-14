@@ -141,3 +141,10 @@ val_list = list(my_dict.values())
 # print key with val 100
 position = val_list.index(100)
 print(key_list[position])
+
+
+
+###################################### deque() ##########################
+self.slide_window = deque()
+self.slide_window.append(t)
+self.slide_window.popleft()
