@@ -97,11 +97,18 @@ Dictionary
 
 // using array of dictionaries
 d = collections.defaultdict(list)
-
 for i in xrange(n):
     for j in xrange(m):
         d[i - j].append(A[i][j])
         
+dic = {}
+for num in nums:
+	dic[num] = dic.get(num, 0)+1 #The get() method returns the value of the item with the specified key. 
+				#"0" is a value to return if the specified key does not exist.
+for key, val in dic.items():	
+	
+	
+	
 //sort dictionary by value--> works only in python3
 dict(sorted(x.items(), key=lambda item: item[1]))
  or
