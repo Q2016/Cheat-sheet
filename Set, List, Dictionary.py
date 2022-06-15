@@ -50,6 +50,10 @@ for i in res:
     for p in people:
         queue.insert(p[1], p)     
 
+# extend	
+ans=[]	
+ans.extend([i] * cnt.pop(i)) 	
+	
 
 
 // list of list to list
