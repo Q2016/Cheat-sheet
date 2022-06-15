@@ -155,8 +155,7 @@ print(key_list[position])
 
 
 
-# map
-map({a: i+1 for i, a in enumerate(sorted(set(A)))}.get, A)
+
 
 ###################################### deque() ##########################
 self.slide_window = deque()
