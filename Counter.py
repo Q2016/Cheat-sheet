@@ -20,3 +20,9 @@ import collections
 >>> theList = ['blue', 'red', 'blue', 'yellow', 'blue', 'red']
 >>> newList = Counter(theList)
 >>> newList['blue']
+
+
+# example
+ans = collections.Counter()
+ans[i] += count
+return ["{} {}".format(ct, dom) for dom, ct in ans.items()]
