@@ -12,3 +12,7 @@ for i in range(m):
     for j in range(n):
         d[i-j].append(matrix[i][j]) 
 for _, t in d.items():        
+
+# example    
+pairs_dict = defaultdict(set)
+pairs_dict[pair[0]].add(pair[1])    
