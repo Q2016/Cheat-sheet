@@ -11,6 +11,10 @@ df.apply(lambda x: [1, 2], axis=1)
 2    [1, 2]
 
 
+# How to use loop to generate a column
+vif["col1"] = [variance_inflation_factor(col1.values, i) for i in range(col1.shape[1])]
+
+
 
 def get(w0, w1):
      pass 
